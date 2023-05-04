@@ -1,0 +1,124 @@
+body {
+    background-color: #18b7e77a;
+    background-image: url("495521.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+}
+h1 {
+    text-align : center ;
+    background-color :transparent;
+    margin : auto ;
+    color : white ;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+header {
+    color : white ;
+}
+header ul{
+    list-style : none ;
+    background-color: #00357e;
+}
+header ul li{
+    display : inline ;
+    width : 100% ;
+}
+
+header a{
+    color : inherit ;
+    background-color : inherit;
+    font-size : 20px ;
+    text-decoration: none;
+    margin : 0 calc(100%/13) ;
+}
+header form {
+    display: inline;
+    color : inherit ;
+    width :calc((100% - 300px)/5);
+    margin-left : 50px ;
+    background-color : inherit;
+    font-size : 20px ;
+    text-decoration: none;
+}
+.clear {
+    clear : both ;
+}
+aside {
+    color : white ;
+    background-color: #00357e ;
+    width : 15% ;
+    position: relative;
+    top : 0 ;
+    float : left ;
+    height: auto;
+}
+aside a {
+    color : inherit ;
+}
+main {
+    color : white ;
+    width : calc(85% - 4px) ;
+    float : right ;
+    border-left : 4px solid #00357e; 
+}
+div a img {
+    width :350px ;
+    height: 400px ;
+}
+main div {
+    float : left ;
+    width : 50% ;
+}
+.naruto {
+    width: 100px;
+    position: relative;
+}
+.naruto::after {
+    content : "" ;
+    position: absolute;
+    width :0;
+    height:0;
+    border-width :15px ;
+    border-style : solid ;
+    border-color : transparent transparent transparent blue ;
+    top : 50% ;
+    margin-top : -12px ;
+    right: -10px ;
+    padding-left: 2px; 
+}
+.naruto::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 50%;
+    margin-top: 11px;
+    right: -60px;
+    padding-left: 2px;
+    background-color: #00000073;
+    font-size : 16px ;
+    display: none;
+}
+.naruto:hover::after {
+    content : "" ;
+    position: absolute;
+    width :0;
+    height:0;
+    border-width :15px ;
+    border-style : solid ;
+    border-color : blue transparent transparent transparent  ;
+    top : 50% ;
+    margin-top : -12px ;
+    right: -10px ;
+    padding-left: 2px; 
+}
+.naruto:hover::before {
+    display : block ;
+}
+.search {
+    box-shadow: 2px 2px 6px 0 #000000c7;
+}
+::selection {
+    background-color: black;
+}
